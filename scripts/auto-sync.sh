@@ -20,8 +20,7 @@ else
     echo "Reiniciando container worker do Airflow..."
 
     # Reinicia o container docker do Airflow responsável pelas DAGs e Tasks.
-    docker container restart airflow-repo-design-airflow-worker-1
-airflow-repo-design-airflow-worker-1
+    docker container restart airflow-repo-design-airflow-worker-1 airflow-repo-design-airflow-scheduler-1
 
     echo "Container reiniciado com sucesso."
 fi
